@@ -1,0 +1,13 @@
+body {
+    padding-top: 50px;
+}
+.hero {
+    background-image: url('https://contents.bu.ac.th/contents/images/history-page/be8da3c9-c04f-43a6-bb78-62124ac0f6a9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#gallery img {
+    height: 400px;
+    object-fit: cover;
+}
