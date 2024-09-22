@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Homepage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About Event</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#myCarousel">Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#speaker">Speaker Profiles</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#workshop">Workshops and Activities</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="assests/img/bulogooho.jpg"
+        alt=""
+        width="200"
+        height="80"
+      />
+
+      <div class="container-fitst-h1">
+        <h1 class="display-5 fw-bold text-body-emphasis typewriter">
+            Bangkok University Open House 2024
+        </h1>
+    </div>
+    
+
+      <div class="col-lg-6 mx-auto">
+        <img
+        class="d-block mx-auto mb-4"
+        src="assests/img/banner.jpg"
+        alt=""
+        style="width: 100%; margin-top: 20px;"
+      />
+
+        <p class="lead mb-4" >
+          สัมผัสประสบการณ์การเรียนรู้ที่ไม่เหมือนใคร
+          พบปะกับคณาจารย์และนักศึกษาของเรา
+          พร้อมค้นพบหลักสูตรที่จะพาคุณไปสู่ความสำเร็จที่ Bangkok University
+          เปิดโอกาสให้คุณได้สัมผัสชีวิตนักศึกษา
+          เรียนรู้เกี่ยวกับหลักสูตรที่ตอบโจทย์อาชีพในอนาคต
+          และร่วมค้นพบมหาวิทยาลัยที่เต็มไปด้วยนวัตกรรมและสร้างแรงบันดาลใจ!
+        </p>
+        
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 about-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                About the Open House
+              </button>              
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="margin-left: 10px;"">
+            ลงทะเบียนเข้าร่วมงาน
+          </button>
+        </div>
+    </div>
+
+    
+          
+
+          <section id="about" style="margin-top: 100px;">
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">About the Open House</h2>
+            
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                  <div class="col d-flex flex-column align-items-start gap-2">
+                    <h2 class="pb-2">Bangkok University Open House 2024 เปิดประตูต้อนรับผู้ที่สนใจเข้ามาสัมผัสประสบการณ์การเรียนรู้แบบเจาะลึกที่มหาวิทยาลัยกรุงเทพ งานนี้ถูกจัดขึ้นเพื่อให้คุณได้เข้าใจถึงความเป็นไปได้ทางการศึกษา เส้นทางอาชีพที่น่าสนใจ และวิสัยทัศน์แห่งอนาคตที่มหาวิทยาลัยกรุงเทพมุ่งมั่นจะสร้างให้กับนักศึกษา</h2>
+                  </div>
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                      <img src="assests/img/bu.jpg" alt="Icon" style="width: 100%; height: 100%;">
+                    </div>
+                    <h4 class="fw-semibold mb-0 bounce" style="color: black;">เยี่ยมชมมหาวิทยาลัย</h4>
+                    <p class="text-body-secondary" style="color: black !important;">
+                      สำรวจพื้นที่มหาวิทยาลัยกรุงเทพที่สวยงามและทันสมัย พร้อมรับคำแนะนำจากทีมงานเกี่ยวกับสิ่งอำนวยความสะดวกต่างๆ ทั้งอาคารเรียน ห้องทดลอง ห้องสมุด และพื้นที่การเรียนรู้ที่ครบครัน
+                    </p>
+                  </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <img src="assests/img/1567478172_QLS4RDHZ6Z.jpg" alt="Icon" style="width: 100%; height: 100%;">
+                  </div>
+                <h4 class="fw-semibold mb-0 bounce" style="color: black;">พบปะกับคณาจารย์และรุ่นพี่นักศึกษา</h4>
+                <p class="text-body-secondary" style="color: black !important;">
+                    คุณจะได้พูดคุยกับคณาจารย์ผู้เชี่ยวชาญในหลากหลายสาขา และรับคำแนะนำเกี่ยวกับหลักสูตรและอาชีพในอนาคต พร้อมฟังประสบการณ์จากนักศึกษาปัจจุบันเกี่ยวกับการเรียนและชีวิตในมหาวิทยาลัย</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <img src="assests/img/7314c6dd-c363-44b9-bdcd-9900dfbfba22.jpg" alt="Icon" style="width: 100%; height: 100%;">
+                  </div>
+                <h4 class="fw-semibold mb-0 bounce" style="color: black;">ข้อมูลเกี่ยวกับทุนการศึกษาและการสมัครเรียน</h4>
+                <p class="text-body-secondary" style="color: black !important;">
+                    สำหรับผู้ที่สนใจทุนการศึกษาและการสมัครเรียน เจ้าหน้าที่มหาวิทยาลัยกรุงเทพจะให้คำแนะนำเกี่ยวกับขั้นตอนและเงื่อนไขต่างๆ พร้อมอธิบายรายละเอียดการสมัครและเกณฑ์การรับนักศึกษาในแต่ละสาขาวิชา</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <img src="assests/img/1667979052_LDO6G5F1TR.png" alt="Icon" style="width: 100%; height: 100%;">
+                  </div>
+                <h4 class="fw-semibold mb-0 bounce" style="color: black;">การแสดงผลงานและกิจกรรมพิเศษ</h4>
+                <p class="text-body-secondary" style="color: black !important;">
+                    งานนี้จะมีการแสดงผลงานของนักศึกษาจากหลากหลายสาขา เช่น นิทรรศการ โครงการวิจัย และโปรเจกต์สร้างสรรค์ รวมถึงกิจกรรมเวิร์กช็อปที่นำเสนอเนื้อหาด้านวิชาการ พัฒนาทักษะส่วนตัว และการเตรียมตัวสำหรับอาชีพในอนาคต</p>
+              </div>
+              
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <img src="assests/img/76b39655-ed10-4ed5-83d7-704f100e37ec.jpg" alt="Icon" style="width: 100%; height: 100%;">
+                  </div>
+                <h4 class="fw-semibold mb-0 bounce" style="color: black;">สาธิตเทคโนโลยีและนวัตกรรมใหม่</h4>
+                <p class="text-body-secondary " style="color: black !important;">
+                    พบกับการสาธิตเทคโนโลยีล้ำสมัยในห้องเรียนและห้องปฏิบัติการ รวมถึงการเรียนรู้ออนไลน์และการสร้างสรรค์สื่อดิจิทัลที่เปิดโอกาสให้นักศึกษาในยุคดิจิทัล</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        
+        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+          <div class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom" style="margin-bottom: 60px;">Schedule</h2>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+                <img src="assests/img/enent1.png" class="d-block mx-auto" alt="First slide" style="width: 50%; height: auto;">
+                <div class="container">
+                    <!-- <div class="carousel-caption text-start" style="background-color: #2e3a72; border-radius: 15px; width: 500px; margin-left: 200px; margin-bottom: 180px; padding-left: 20px;">
+                        <h1>29 August 2024</h1>
+                        <p class="opacity-80">09:00 - 10:00: ลงทะเบียนและต้อนรับ at <strong>A3</strong>
+                            <br>10:00 - 11:00: พิธีเปิดงาน at <strong>A3</strong>
+                            <br>11:00 - 12:30: สัมมนา: การเลือกหลักสูตรที่เหมาะสม at <strong>A3 308</strong>
+                            <br>13:30 - 15:00: นิทรรศการผลงานนักศึกษา at <strong>ตึกคณะ</strong>
+                            <br>15:00 - 16:30: กิจกรรมเวิร์กช็อป: การพัฒนาทักษะการสื่อสาร at <strong>ตึกคณะ</strong></p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                      </div> -->
+                      
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="assests/img/event2.png" class="d-block mx-auto" alt="First slide" style="width: 50%; height: auto;">
+                <div class="container">
+                  <!-- <div class="carousel-caption" style="margin-bottom: 20px; background-color: #2e3a72; border-radius: 15px; width: 500px; padding-left: 20px; margin-left: 200px; text-align: left;">
+                    <h1>30 August 2024</h1>
+                    <p>09:00 - 10:30: สัมมนา: เทคโนโลยีการศึกษาในยุคดิจิทัล at <strong>A1</strong>
+                        <br>10:30 - 12:00: การแสดงสด: โครงการสร้างสรรค์จากนักศึกษา at <strong>A4</strong>
+                        <br>13:00 - 15:00: การให้คำปรึกษาเกี่ยวกับทุนการศึกษา at <strong>A8</strong>
+                        <br>15:00 - 16:30: กิจกรรมเวิร์กช็อป: การสร้างเครือข่ายอาชีพ at <strong>A3 308</strong></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assests/img/event3.png" class="d-block mx-auto" alt="First slide" style="width: 50%; height: auto;">
+                  <!-- <div class="carousel-caption text-end" style="margin-bottom: 20px; margin-right: 200px; background-color: #2e3a72; border-radius: 15px; width: 450px; padding-right: 30px; margin-left: 300px;">
+                    <h1>31 August 2024</h1>
+                    <p>09:00 - 10:00: การเยี่ยมชมมหาวิทยาลัย 
+                        <br>10:00 - 12:00: การสอบถามข้อมูลจากนักศึกษา at <strong>ตึกคณะ</strong>
+                        <br>13:00 - 14:30: กิจกรรมปิดงาน: การให้คำปรึกษาส่วนตัว 
+                        <br>14:30 - 15:00: พิธีปิดงาน at <strong>ลานตึกคณะนิเทศ</strong></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 200px;" id="speaker">
+            <h2 class="pb-2 border-bottom" style="margin-bottom: 100px;">Speaker Profiles</h2>
+              <div class="col-lg-4">
+                <img src="assests/img/dr_jaidee.png" alt="Description for image 1" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">ดร. สมชาย ใจดี</h2>
+                <p>ดร. สมชายมีประสบการณ์มากกว่า 20 ปีในวงการการศึกษาด้านบริหารธุรกิจ เขาได้รับปริญญาเอกจากมหาวิทยาลัยชั้นนำในต่างประเทศ และเป็นนักวิจัยที่มีชื่อเสียงในด้านการจัดการและนวัตกรรม</p>
+                <p><a class="btn btn-secondary about-button" href="#speak1">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              
+              <div class="col-lg-4">
+                <img src="assests/img/naphat.png" alt="Description for image 2" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">ดร. นภัทร สุขขี</h2>
+                <p>ดร. นภัทรมีความเชี่ยวชาญในด้านการศึกษาผ่านระบบออนไลน์ และได้พัฒนาโปรแกรมการเรียนรู้ที่ได้รับความนิยม เขาเป็นวิทยากรที่มีชื่อเสียงในงานสัมมนาเกี่ยวกับเทคโนโลยีการศึกษา</p>
+                <p><a class="btn btn-secondary about-button" href="#speak2">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              
+              <div class="col-lg-4">
+                <img src="assests/img/JANE.png" alt="Description for image 3" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">อาจารย์ เจนจิรา ประยูร</h2>
+                <p>อาจารย์เจนจิราเป็นผู้เชี่ยวชาญด้านการสื่อสารและมีผลงานวิจัยที่ได้รับการตีพิมพ์ในวารสารระดับนานาชาติ เธอมีประสบการณ์ในการสอนนักศึกษาและเป็นที่ปรึกษาโครงการวิจัย</p>
+                <p><a class="btn btn-secondary about-button" href="#speak3">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+              <div id="speak1" class="row featurette" style="margin-top: 200px;">
+                <div class="col-md-7" style="margin-top: 200px;">
+                  <h2 class="featurette-heading fw-normal lh-1">"การเลือกเส้นทางอาชีพในยุคดิจิทัล"<span class="text-body-secondary"></span></h2>
+                  <h5>วันที่ 29 สิงหาคม, 10:00 - 11:00</h5>
+                  <p class="lead typewriter">ร่วมฟังดร. สมชายเกี่ยวกับการเลือกเส้นทางอาชีพที่เหมาะสมในโลกที่เปลี่ยนแปลงรวดเร็ว</p>
+    
+                </div>
+                <div class="col-md-5 text-center">
+                  <img src="assests/img/dr_jaidee2.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Description">
+                </div>
+              </div>            
+    
+              <div id="speak2" class="row featurette" style="margin-top: 500px;">
+                <div class="col-md-7 order-md-2" style="margin-top: 200px;">
+                  <h2 class="featurette-heading fw-normal lh-1">"เทคโนโลยีการศึกษาในยุคใหม่"<span class="text-body-secondary"></span></h2>
+                  <h5>วันที่ 30 สิงหาคม, 09:00 - 10:30</h5>
+                  <p class="lead typewriter">การบรรยายเกี่ยวกับการใช้เทคโนโลยีในการเรียนการสอนในยุคดิจิทัลและแนวโน้มในอนาคต</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img src="assests/img/naphat2.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Description">
+                </div>
+              </div>
+    
+              <div id="speak3" class="row featurette" style="margin-top: 500px;">
+                <div class="col-md-7" style="margin-top: 200px;">
+                  <h2 class="featurette-heading fw-normal lh-1">"ทักษะการสื่อสารที่จำเป็นสำหรับนักศึกษา"<span class="text-body-secondary"></span></h2>
+                  <h5>วันที่ 30 สิงหาคม, 15:00 - 16:30</h5>
+                  <p class="lead typewriter">การบรรยายที่จะช่วยพัฒนาทักษะการสื่อสารของนักศึกษาในสภาพแวดล้อมที่เปลี่ยนแปลง</p>
+                </div>
+                <div class="col-md-5">
+                  <img src="assests/img/jane2.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Description">
+                </div>
+              </div>
+          </div>
+
+            <div style="margin-top: 200px;" id="workshop">
+              <header class="pb-3 mb-4 border-bottom">
+                  <span class="fs-4"><strong>Workshops and Activities</strong></span>
+              </header>
+          
+              <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                      <div class="workshop-card h-100 p-5 text-bg-dark rounded-3">
+                          <h2><strong>การพัฒนาทักษะการสื่อสาร</strong></h2>
+                          <p><strong>วันและเวลา:</strong> วันที่ 30 สิงหาคม, 13:00 - 15:00</p>
+                          <p><strong>สถานที่:</strong> ห้อง A3-101</p>
+                          <p><strong>รายละเอียด:</strong> เข้าร่วมกิจกรรมเวิร์กช็อปนี้เพื่อพัฒนาทักษะการสื่อสารที่จำเป็นสำหรับการเรียนและการทำงานในอนาคต ผู้เข้าร่วมจะได้ฝึกฝนการนำเสนอ การฟังอย่างตั้งใจ และการสื่อสารในสถานการณ์ต่างๆ</p>
+                          <a href="#form1" class="btn btn-outline-light">ลงทะเบียน</a>
+                      </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                      <div class="workshop-card h-100 p-5 bg-body-tertiary border rounded-3">
+                          <h2><strong>การสร้างเครือข่ายอาชีพ</strong></h2>
+                          <p><strong>วันและเวลา:</strong> วันที่ 30 สิงหาคม, 15:00 - 16:30</p>
+                          <p><strong>สถานที่:</strong> ห้อง A4-203</p>
+                          <p><strong>รายละเอียด:</strong> เรียนรู้เทคนิคในการสร้างเครือข่ายอาชีพและการสร้างความสัมพันธ์ที่ดีกับผู้คนในวงการต่างๆ กิจกรรมนี้เหมาะสำหรับผู้ที่ต้องการเตรียมตัวเข้าสู่วงการทำงาน</p>
+                          <a href="#form2" class="btn btn-outline-secondary">ลงทะเบียน</a>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="row align-items-md-stretch">
+                  <div class="col-md-6">
+                      <div class="workshop-card h-100 p-5 bg-body-tertiary border rounded-3">
+                          <h2><strong>เวิร์กช็อปสร้างสื่อดิจิทัล</strong></h2>
+                          <p><strong>วันและเวลา:</strong> วันที่ 31 สิงหาคม, 10:00 - 12:00</p>
+                          <p><strong>สถานที่:</strong> ห้อง A8-202</p>
+                          <p><strong>รายละเอียด:</strong> ในเวิร์กช็อปนี้ผู้เข้าร่วมจะได้เรียนรู้วิธีการสร้างสื่อดิจิทัล เช่น วิดีโอและกราฟิก โดยใช้เครื่องมือและซอฟต์แวร์ที่ทันสมัย</p>
+                          <a href="#form3" class="btn btn-outline-secondary">ลงทะเบียน</a>
+                      </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                      <div class="workshop-card h-100 p-5 text-bg-dark rounded-3">
+                          <h2><strong>การฝึกทักษะการคิดสร้างสรรค์</strong></h2>
+                          <p><strong>วันและเวลา:</strong> วันที่ 31 สิงหาคม, 13:00 - 14:30</p>
+                          <p><strong>สถานที่:</strong> ห้อง A3-301</p>
+                          <p><strong>รายละเอียด:</strong> เข้าร่วมกิจกรรมเพื่อฝึกฝนการคิดสร้างสรรค์และการแก้ปัญหาในสถานการณ์ต่างๆ ผ่านเกมและการทำงานกลุ่ม</p>
+                          <a href="#form4" class="btn btn-outline-light">ลงทะเบียน</a>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Forms -->
+              <div id="form1" class="modal">
+                  <div class="modal-content">
+                      <h2>ลงทะเบียนการพัฒนาทักษะการสื่อสาร</h2>
+                      <form>
+                          <label for="name1">ชื่อ:</label>
+                          <input type="text" id="name1" name="name" required>
+                          <label for="email1">อีเมล:</label>
+                          <input type="email" id="email1" name="email" required>
+                          <button class="btn btn-primary" type="submit">ส่งข้อมูล</button>
+                      </form>
+                      <a href="#workshop" class="close">ปิด</a>
+                  </div>
+              </div>
+          
+              <div id="form2" class="modal">
+                  <div class="modal-content">
+                      <h2>ลงทะเบียนการสร้างเครือข่ายอาชีพ</h2>
+                      <form>
+                          <label for="name2">ชื่อ:</label>
+                          <input type="text" id="name2" name="name" required>
+                          <label for="email2">อีเมล:</label>
+                          <input type="email" id="email2" name="email" required>
+                          <button class="btn btn-primary" type="button">ส่งข้อมูล</button>
+                      </form>
+                      <a href="#workshop" class="close">ปิด</a>
+                  </div>
+              </div>
+          
+              <div id="form3" class="modal">
+                  <div class="modal-content">
+                      <h2>ลงทะเบียนเวิร์กช็อปสร้างสื่อดิจิทัล</h2>
+                      <form>
+                          <label for="name3">ชื่อ:</label>
+                          <input type="text" id="name3" name="name" required>
+                          <label for="email3">อีเมล:</label>
+                          <input type="email" id="email3" name="email" required>
+                          <button class="btn btn-primary" type="button">ส่งข้อมูล</button>
+                      </form>
+                      <a href="#workshop" class="close">ปิด</a>
+                  </div>
+              </div>
+          
+              <div id="form4" class="modal">
+                  <div class="modal-content">
+                      <h2>ลงทะเบียนการฝึกทักษะการคิดสร้างสรรค์</h2>
+                      <form>
+                          <label for="name4">ชื่อ:</label>
+                          <input type="text" id="name4" name="name" required>
+                          <label for="email4">อีเมล:</label>
+                          <input type="email" id="email4" name="email" required>
+                          <button class="btn btn-primary" type="button">ส่งข้อมูล</button>
+                      </form>
+                      <a href="#workshop" class="close">ปิด</a>
+                  </div>
+              </div>
+  </body>
+</html>
