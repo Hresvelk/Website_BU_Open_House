@@ -179,3 +179,35 @@ button {
 button:hover {
     /* background-color: #218838; */
 }
+.card-image {
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.card-image:hover {
+    transform: rotateY(180deg);
+}
+
+.move-on-hover {
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.col-md-5:hover .move-on-hover {
+    transform: translate(-20px, -20px); /* Default movement to top-left */
+}
+
+/* Move image to the top-right */
+.col-md-5:hover .move-on-hover:hover {
+    transform: translate(20px, -20px); /* Move to top-right */
+}
+
+/* Move image to the bottom-left */
+.col-md-5:hover .move-on-hover:hover {
+    transform: translate(-20px, 20px); /* Move to bottom-left */
+}
+
+/* Move image to the bottom-right */
+.col-md-5:hover .move-on-hover:hover {
+    transform: translate(20px, 20px); /* Move to bottom-right */
+}
