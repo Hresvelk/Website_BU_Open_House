@@ -211,3 +211,21 @@ button:hover {
 .col-md-5:hover .move-on-hover:hover {
     transform: translate(20px, 20px); /* Move to bottom-right */
 }
+.carousel-image {
+    width: 100%;         /* Make the image take full width of its container */
+    height: auto;        /* Keep aspect ratio */
+    max-width: 800px;    /* Optional: Set a maximum width to prevent it from being too large */
+}
+
+/* Optionally adjust the image size for different screen sizes */
+@media (max-width: 768px) {
+    .carousel-image {
+        max-width: 90%;  /* Smaller images on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+        max-width: 100%; /* Adjust for very small screens */
+    }
+}
