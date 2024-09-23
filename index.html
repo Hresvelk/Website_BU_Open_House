@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
 
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
@@ -29,21 +30,49 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About Event</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#myCarousel">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#speaker">Speaker Profiles</a>
-                  </li>
-                  <li>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myCarousel">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#speaker">Speaker Profiles</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#workshop">Workshops and Activities</a>
-                  </li>
-              </ul>
-          </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#sponsors">Sponsors & Partners</a></li>
+                  </ul>
+                </li>
+            </ul>
+        
+            <!-- Register button pushed to the right -->
+            <ul class="navbar-nav ms-auto">
+              
+                <li class="nav-item">
+                    <a class="nav-link bg-primary" href="#" data-bs-toggle="modal" data-bs-target="#registerModal" 
+                       style="color: white; font-weight: bold; border-radius: 20px;">
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
       </div>
   </nav>
 
@@ -57,7 +86,7 @@
       />
 
       <div class="container-fitst-h1">
-        <h1 class="display-5 fw-bold text-body-emphasis typewriter">
+        <h1 class="display-5 fw-bold text-body-emphasis typewriter" style="font-family: 'IBM Plex Sans Thai', sans-serif;">
             Bangkok University Open House 2024
         </h1>
     </div>
@@ -71,7 +100,7 @@
         style="width: 100%; margin-top: 20px;"
       />
 
-        <p class="lead mb-4" >
+        <p class="lead mb-4" style="font-family: 'IBM Plex Sans Thai', sans-serif;">
           สัมผัสประสบการณ์การเรียนรู้ที่ไม่เหมือนใคร
           พบปะกับคณาจารย์และนักศึกษาของเรา
           พร้อมค้นพบหลักสูตรที่จะพาคุณไปสู่ความสำเร็จที่ Bangkok University
@@ -82,25 +111,28 @@
         
 
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 about-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <button style="font-family: 'IBM Plex Sans Thai', sans-serif;" type="button" class="btn btn-primary btn-lg px-4 gap-3 about-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
                 About the Open House
               </button>              
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="margin-left: 10px;"">
-            ลงทะเบียนเข้าร่วมงาน
-          </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4" 
+              style="margin-left: 10px; font-family: 'IBM Plex Sans Thai', sans-serif;" 
+              data-bs-toggle="modal" data-bs-target="#registerModal">
+          ลงทะเบียนเข้าร่วมงาน
+      </button>
+      
         </div>
     </div>
 
     
           
 
-          <section id="about" style="margin-top: 100px;">
+          <section id="about" style="margin-top: 100px; font-family: 'IBM Plex Sans Thai', sans-serif;" >
             <div class="container px-4 py-5">
-                <h2 class="pb-2 border-bottom">About the Open House</h2>
+                <h2 class="pb-2 border-bottom" style="font-family: 'IBM Plex Sans Thai', sans-serif;">About the Open House</h2>
             
                 <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
                   <div class="col d-flex flex-column align-items-start gap-2">
-                    <h2 class="pb-2">Bangkok University Open House 2024 เปิดประตูต้อนรับผู้ที่สนใจเข้ามาสัมผัสประสบการณ์การเรียนรู้แบบเจาะลึกที่มหาวิทยาลัยกรุงเทพ งานนี้ถูกจัดขึ้นเพื่อให้คุณได้เข้าใจถึงความเป็นไปได้ทางการศึกษา เส้นทางอาชีพที่น่าสนใจ และวิสัยทัศน์แห่งอนาคตที่มหาวิทยาลัยกรุงเทพมุ่งมั่นจะสร้างให้กับนักศึกษา</h2>
+                    <h2 class="pb-2" style="font-family: 'IBM Plex Sans Thai', sans-serif;">Bangkok University Open House 2024 เปิดประตูต้อนรับผู้ที่สนใจเข้ามาสัมผัสประสบการณ์การเรียนรู้แบบเจาะลึกที่มหาวิทยาลัยกรุงเทพ งานนี้ถูกจัดขึ้นเพื่อให้คุณได้เข้าใจถึงความเป็นไปได้ทางการศึกษา เส้นทางอาชีพที่น่าสนใจ และวิสัยทัศน์แห่งอนาคตที่มหาวิทยาลัยกรุงเทพมุ่งมั่นจะสร้างให้กับนักศึกษา</h2>
                   </div>
           <div class="col">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
@@ -109,7 +141,7 @@
                       <img src="assests/img/bu.jpg" alt="Icon" style="width: 100%; height: 100%;">
                     </div>
                     <h4 class="fw-semibold mb-0 bounce" style="color: black;">เยี่ยมชมมหาวิทยาลัย</h4>
-                    <p class="text-body-secondary" style="color: black !important;">
+                    <p class="text-body-secondary" style="color: black !important; font-family: 'IBM Plex Sans Thai', sans-serif;">
                       สำรวจพื้นที่มหาวิทยาลัยกรุงเทพที่สวยงามและทันสมัย พร้อมรับคำแนะนำจากทีมงานเกี่ยวกับสิ่งอำนวยความสะดวกต่างๆ ทั้งอาคารเรียน ห้องทดลอง ห้องสมุด และพื้นที่การเรียนรู้ที่ครบครัน
                     </p>
                   </div>
@@ -156,7 +188,7 @@
     </section>
 
         
-        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel" style="font-family: 'IBM Plex Sans Thai', sans-serif;">
           <div class="container px-4 py-5">
             <h2 class="pb-2 border-bottom" style="margin-bottom: 60px;">Schedule</h2>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -217,7 +249,7 @@
             </div>
           </div>
 
-          <div class="row" style="margin-top: 200px;" id="speaker">
+          <div class="row" style="margin-top: 200px; font-family: 'IBM Plex Sans Thai', sans-serif;" id="speaker">
             <h2 class="pb-2 border-bottom" style="margin-bottom: 100px;">Speaker Profiles</h2>
               <div class="col-lg-4">
                 <img src="assests/img/dr_jaidee.png" alt="Description for image 1" class="card-image rounded-circle" width="140" height="140">
@@ -240,7 +272,7 @@
                 <p><a class="btn btn-secondary about-button" href="#speak3">View details »</a></p>
               </div><!-- /.col-lg-4 -->
 
-              <div id="speak1" class="row featurette" style="margin-top: 200px;">
+              <div id="speak1" class="row featurette" style="margin-top: 100px;">
                 <div class="col-md-7" style="margin-top: 200px;">
                   <h2 class="featurette-heading fw-normal lh-1">"การเลือกเส้นทางอาชีพในยุคดิจิทัล"<span class="text-body-secondary"></span></h2>
                   <h5>วันที่ 29 สิงหาคม, 10:00 - 11:00</h5>
@@ -252,7 +284,7 @@
               </div>              
               </div>            
     
-              <div id="speak2" class="row featurette" style="margin-top: 500px;">
+              <div id="speak2" class="row featurette" style="margin-top: 0px;">
                 <div class="col-md-7 order-md-2" style="margin-top: 200px;">
                   <h2 class="featurette-heading fw-normal lh-1">"เทคโนโลยีการศึกษาในยุคใหม่"<span class="text-body-secondary"></span></h2>
                   <h5>วันที่ 30 สิงหาคม, 09:00 - 10:30</h5>
@@ -263,7 +295,7 @@
                 </div>
               </div>
     
-              <div id="speak3" class="row featurette" style="margin-top: 500px;">
+              <div id="speak3" class="row featurette" style="margin-top: 0px;">
                 <div class="col-md-7" style="margin-top: 200px;">
                   <h2 class="featurette-heading fw-normal lh-1">"ทักษะการสื่อสารที่จำเป็นสำหรับนักศึกษา"<span class="text-body-secondary"></span></h2>
                   <h5>วันที่ 30 สิงหาคม, 15:00 - 16:30</h5>
@@ -275,7 +307,7 @@
               </div>
           </div>
 
-            <div style="margin-top: 200px;" id="workshop">
+            <div style="margin-top: 200px; font-family: 'IBM Plex Sans Thai', sans-serif;" id="workshop">
               <header class="pb-3 mb-4 border-bottom">
                   <span class="fs-4"><strong>Workshops and Activities</strong></span>
               </header>
@@ -379,6 +411,191 @@
                       </form>
                       <a href="#workshop" class="close">ปิด</a>
                   </div>
+            </div>
+
+            <section id="gallery" class="bg-light py-5">
+              <div class="container">
+                  <h2 class="text-center mb-4">Gallery</h2>
+                  <div id="carouselExample" class="carousel slide" style="margin: 0px 100px;">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-6/457407222_811737454456270_5692081071493384254_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SSTjtO2cyYAQ7kNvgGn1Z8o&_nc_ht=scontent.fbkk29-5.fna&_nc_gid=APdMC0S0P0BepMOSoQEW7ym&oh=00_AYAcyf1otHHZMLZWzrJ6RfYrvaSBSASEs0-WcbEhIWEbdQ&oe=66F6CED0" class="d-block w-100" alt="1">
+                          </div>
+                      <div class="carousel-item">
+                          <img src="https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/457550947_811737357789613_6294201746880833993_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qlt9TKKiC7IQ7kNvgEoICrx&_nc_ht=scontent.fbkk29-7.fna&_nc_gid=AYgpcZZxlwsiP8W5XE0Kopj&oh=00_AYBKsNPhsolZmJqwSQj9BKDVuSxBojfibM75BwOSs0f94w&oe=66F6C3C0" class="d-block w-100" alt="2">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/457649871_811737594456256_282352726629432337_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=i9vdts6FkyMQ7kNvgGwSNe2&_nc_ht=scontent.fbkk29-8.fna&_nc_gid=Av3adzejikQ92tgiIVlUJvj&oh=00_AYBbxc45LpY_AWz1aulRAT8Za2T7aESL6BLMuyU2r_Vvjg&oe=66F6DAC1" class="d-block w-100" alt="3">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
               </div>
+          </section>
+
+          <section id="faq" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">FAQ</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">งาน BU Open House 2024 จัดขึ้นเมื่อไหร่
+                              และจัดที่ไหน?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              -มารวมตัวพร้อมกันได้ในวันที่ 29-31 สิงหาคม 2567 ณ มหาวิทยาลัยกรุงเทพ Main campus (รังสิต)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              -ลงทะเบียนครั้งเดียวสําหรับเข้าร่วมงาน BU OPEN HOUSE แล้วสามารถดูตาราง กิจกรรมของคณะในคลัสเตอร์ต่าง ๆ ได้ที่หน้าเว็บไซต์หากสนใจกิจกรรมไหนก็ สามารถไปสแกน QR Code เข้าร่วมที่หน้ากิจกรรมของแต่ละคณะ/สาขาได้เลย
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมง
+                            และสิ้นสุดเมื่อไหร่?
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            -สําหรับกิจกรรมทุกคณะ จะเริ่มตั้งแต่เวลา 9.00-16.30 น. และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่เวทีกลางบริเวณโถงอาคาร C6 หอสมุดสุรัตน์ โอสถานุเคราะห์ ตั้งแต่เวลา 17.00-20.00 น.
+                          </div>
+                        </div>
+
+                      <div class="accordion-item"></div>
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">การแต่งกาย ใส่ชุดอะไรไปดี?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              -มหาวิทยาลัยกรุงเทพเราเปิดรับความหลากหลาย ทุกคนสามารถแต่งกายได้ทั้งเครื่องแบบสถาบัน หรือชุดฟรีสไตล์ของตัวเอง แต่ยังสุภาพเหมาะสมกับสถานศึกษาได้เลย
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">ทุกคณะมีเปิดบ้านทุกวันไหม? และทั้ง 3 วัน
+                              มีกิจกรรมเหมือนกันไหม?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              -ทุกคณะจะมีกิจกรรมเปิดบ้านให้เข้าร่วมทั้ง 3 วัน สามารถเช็กตารางกิจกรรมได้ที่หน้าแรกตามแต่ละคลัสเตอร์ซึ่งบางคณะจะมีกิจกรรมไฮไลต์แต่ละวันไม่เหมือนกันอย่าลืมวางแผนเพื่อไม่ให้พลาดกิจกรรมที่ชอบนะคะ
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-light py-5">
+          <div class="container">
+              <h2 class="text-center mb-4">Contact Us</h2>
+              <div class="row">
+                  <div class="col">
+                      <h3>Information</h3>
+                      <span class="text-info-address">9/1 หมู่ 5 ถนนพหลโยธิน ตำบลคลองหนึ่ง อำเภอคลองหลวง จังหวัดปทุมธานี 12120</span>
+                      <div class="col-md-auto">
+                          <a class="layout-info" target="_blank" href="https://goo.gl/maps/u8f1DnLhCCHJGhq2A" style="text-decoration: none;">
+                              <span class="text-info-address primary">View on Google Map</span>
+                          </a>
+                      </div>
+                      <hr class="my-4">
+                      <span>T: 02 407 3888</span><br>
+                      <span>F: 02 407 3999</span><br>
+                      <span>General Enquires: info@bu.ac.th</span><br>
+                      <span>Admissions: admission@bu.ac.th</span><br>
+                  </div>
+                  <div class="col">
+                      <form>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" placeholder="Your name" required>
+                          </div>
+                          <div class="mb-3">
+                              <input type="email" class="form-control" placeholder="Your email" required>
+                          </div>
+                          <div class="mb-3">
+                              <textarea class="form-control" rows="5" placeholder="Your message" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="sponsors" class="py-5"></section>
+        <div class="container">
+            <h2 class="text-center mb-4">Sponsors & Partners</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <img src="https://images-ext-1.discordapp.net/external/ff4hP2MusJCfKFqFiKkMC7YOoYxWrZH3YIQDIjd7OEc/https/logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-1-1.png?format=webp&quality=lossless&width=437&height=437" class="img-fluid" alt="Sponsor 1" style="max-width: 150px;">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="https://cpselection.cpbrandsite.com/cp-logo.png" class="img-fluid" alt="Sponsor 2" style="max-width: 150px;">
+                    
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="https://www.freepnglogos.com/uploads/shopee-logo/shopee-circle-logo-design-shopping-bag-13.png" class="img-fluid" alt="Partner 1" style="max-width: 150px;">
+                    
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="https://images-ext-1.discordapp.net/external/RRz6z9OuXd_O0td6CFaJo8qcBLpF8VHV14pHHspWnd0/https/seeklogo.com/images/T/truemoney-wallet-logo-9CCDDD6CB0-seeklogo.com.png?format=webp&quality=lossless" class="img-fluid" alt="Partner 2" style="max-width: 150px;">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body p-5 pt-0">
+        <form>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Phone Number</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Register</button>
+          <small class="text-body-secondary">By clicking Register, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="button">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#google"></use></svg>Sign up with Google
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="button">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>Sign up with Facebook
+          </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <footer class="bg-dark text-white text-center py-3"></footer>
+      <p>&copy; 2024 Bangkok University Open House. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

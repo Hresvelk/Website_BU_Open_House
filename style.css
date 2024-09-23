@@ -1,3 +1,6 @@
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
 .container-fitst-h1 {
     display: flex;
     justify-content: center; 
@@ -24,6 +27,7 @@
 
 .bounce {
     display: inline-block; 
+    font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
 .bounce:hover {
